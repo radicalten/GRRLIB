@@ -12,7 +12,6 @@ jobs:
       uses: actions/checkout@v4
     - name: Install Grrlib
       run: |
-         git clone https://github.com/GRRLIB/GRRLIB.git
          cd GRRLIB/GRRLIB/
          make clean
          make all
