@@ -19,7 +19,8 @@ jobs:
          make install
     - name: Compile
       run: |
-        make -f Makefile.wii -j$(nproc)
+        cd examples/unlimited2d
+        make -f Makefile -j$(nproc)
     - name: Upload
       uses: actions/upload-artifact@v4
       with:
